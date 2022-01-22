@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node-17
 
 WORKDIR '/app'
 ENV NODE_OPTIONS=--openssl-legacy-provider
