@@ -29,10 +29,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          cache-from: type=registry,ref=wetido/pfswcho_zad2:cache
-          cache-to: type=inline
           context: ./
           file: ./Dockerfile
           push: true
           tags: |
-            wetido/pfswcho_zad2:cache
+            wetido/pfswcho_zad2:multiStage
